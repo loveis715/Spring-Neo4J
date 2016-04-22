@@ -1,21 +1,12 @@
 package com.ambergarden.samples.neo4j.entities;
 
-import org.neo4j.ogm.annotation.GraphId;
 import org.neo4j.ogm.annotation.NodeEntity;
+
+import com.ambergarden.samples.neo4j.entities.base.NamedEntity;
 
 /**
  * Entity which represents a person
  */
 @NodeEntity
-public class Person {
-   @GraphId
-   private Long id;
-
-   public Long getId() {
-      return id;
-   }
-
-   public void setId(Long id) {
-      this.id = id;
-   }
+public class Person extends NamedEntity {
 }
